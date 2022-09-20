@@ -4,8 +4,15 @@
 }
 
 .navbar {
+    display: flex;
     overflow: hidden;
     background-color: #0D1117;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+@media all and (max-width: 600px) {
+    .navbar {display: none;}
 }
 
 .navbar a {
