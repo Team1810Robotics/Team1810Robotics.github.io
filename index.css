@@ -14,7 +14,7 @@ body, html {
     background-color: rgb(43, 48, 58);
 }
 
-.projects, .contact_me {
+.check-out {
     color: var(--offWhite);
     background-color: #0D1117;
     text-align: center;
@@ -22,7 +22,7 @@ body, html {
     text-align: justify;
 }
 
-.main {
+.heading {
     font-size: 2.5rem;
 }
 
@@ -57,23 +57,34 @@ h2 {
     font-size: 30px;
 }
 
-ul {
+.check-out li {
     font-size: 20px;
     line-height: 40px;
 }
 
-.projects a {
+.check-out a {
     color: #489BF7;
     font-style: italic;
     text-decoration: none;
 }
 
-.projects a:hover {
+.check-out a:hover {
     color: #48c5f7;
     text-decoration: underline;
     cursor: pointer;
 }
 
-.projects a:visited {
+.check-out a:visited {
     color: #6d1acc;
+}
+
+/* me be dumb */
+.contact ul {
+    list-style: circle;
+    margin-left: 50px;
+}
+
+.contact ol {
+    list-style: disc;
+    margin-left: 0;
 }
