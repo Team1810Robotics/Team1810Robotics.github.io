@@ -7,6 +7,10 @@
     --nav-background-color: #0D1117;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -59,7 +63,6 @@ nav {
 
 /* mobile */
 @media screen and (max-width:1090px) {
-
     .nav-links {
         position: absolute;
         right: 0;
