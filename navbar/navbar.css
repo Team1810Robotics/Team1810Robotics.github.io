@@ -58,11 +58,11 @@ nav {
 }
 
 /* mobile */
-@media screen and (max-width:1090px) {
-    html, body {
+@media screen and (max-width:1090px) {    
+    body {
         overflow-x: hidden;
     }
-    
+
     .nav-links {
         position: absolute;
         right: 0;
