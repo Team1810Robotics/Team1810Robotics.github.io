@@ -59,9 +59,9 @@ nav {
 
 /* mobile */
 @media screen and (max-width:1090px) {    
-    body.modal-open {
-        overflow: hidden;
-        position: fixed;
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 
     .nav-links {
