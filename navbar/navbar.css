@@ -59,7 +59,7 @@ nav {
 
 /* mobile */
 @media screen and (max-width:1090px) {    
-    body {
+    html, body {
         overflow-x: hidden;
     }
 
