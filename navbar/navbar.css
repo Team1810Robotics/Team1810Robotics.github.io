@@ -58,10 +58,11 @@ nav {
 }
 
 /* mobile */
-@media screen and (max-width:1090px) {    
-    body {
+@media screen and (max-width:1090px) {
+    html, body {
         overflow-x: hidden;
         overflow-y: scroll;
+        position: relative;
     }
 
     .nav-links {
