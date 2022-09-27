@@ -16,6 +16,7 @@ html, body {
     padding: 10px;
     background-color: #0D1117;
     border-radius: 5px;
+    box-shadow: 5px 5px 4px 1px rgba(0,0,0, 0.2);
 }
 
 .gallery-images {
@@ -55,9 +56,6 @@ html, body {
     align-items: center;
     justify-content: center;
     text-align: center;
-
-
-    
 }
 
 .gallery-images li:hover .overlay {
@@ -80,4 +78,46 @@ html, body {
     .gallery-images li {
         width: calc(100% - 5px);
     }
+}
+
+.back-button {
+    display: flex;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #0D1117;
+    color: #F1FEFE;
+    justify-content: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px 5px 5px 10px;
+    box-shadow: 5px 5px 4px 1px rgba(0,0,0, 0.2);
+}
+
+.back-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.back-button span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+  
+.back-button:hover span {
+    padding-left: 25px;
+}
+  
+.back-button:hover span:after {
+    opacity: 1;
+    left: 0;
 }

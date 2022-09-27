@@ -16,6 +16,7 @@ html, body {
     padding: 10px;
     background-color: #0D1117;
     border-radius: 5px;
+    box-shadow: 5px 5px 4px 1px rgba(0,0,0, 0.2);
 }
 
 .overlay {
@@ -55,7 +56,11 @@ html, body {
         width: 99%;
         /* container needs a fixed height, and it 
         * needs to be taller than your tallest column. */
-        height: 10000px;
+        height: calc((4.77866 * 100vw) + 100px); 
+        /* 
+        1430px: 7050px
+        1200px: 5950px
+        1001px: 5000px*/
     }
 
     .gallery-image {
@@ -89,7 +94,11 @@ html, body {
         width: 99%;
         /* container needs a fixed height, and it 
         * needs to be taller than your tallest column. */
-        height: 10000px;
+        height: calc((10.8216 * 100vw) + 180px);
+        /* 
+        1000: 11000
+        750:  8300
+        501:  5600*/
     }
 
     .gallery-image {
@@ -119,5 +128,71 @@ html, body {
         position: relative;
         cursor: pointer;
         margin: 0 5px 5px 5px;
+    }
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+    text-transform: capitalize;
+    justify-content: space-evenly;
+}
+
+.back-button, .btn {
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #0D1117;
+    border: none;
+    color: #F1FEFE;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 5px 5px 4px 1px rgba(0,0,0, 0.2);
+}
+
+.btn {
+    width: fit-content;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+  
+.back-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.back-button span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+  
+.back-button:hover span {
+    padding-left: 25px;
+}
+  
+.back-button:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+@media (max-width: 1135px) {
+    .buttons {
+        justify-content: left;
+    }
+
+    .btn {
+        display: none;
     }
 }
