@@ -1,0 +1,352 @@
+:root {
+    --offWhite: #F1FEFE;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(43, 48, 58);
+    color: var(--offWhite);
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #0D1117;
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px 1px rgba(0,0,0, 0.2);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    border-radius: 5px;
+    text-transform: capitalize;
+    /* center overlay text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gallery-image:hover .overlay {
+    transform: scale(1);
+}
+
+.gallery-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    background-color: #0D1117;
+}
+
+@media (min-width: 1000px) {
+    .gallery {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: space-between;
+        width: 99%;
+    }
+
+    .gallery-image {
+        width: 33%;
+        position: relative;
+        cursor: pointer;
+        margin: 0 0 0 5px;
+    }
+
+    /* Re-order items */
+    .gallery-image:nth-child(3n+1) { order: 1; }
+    .gallery-image:nth-child(3n+2) { order: 2; }
+    .gallery-image:nth-child(3n)   { order: 3; }
+
+    /* Force new columns */
+    .gallery::before,
+    .gallery::after {
+        content: "";
+        flex-basis: 100%;
+        width: 0;
+        order: 2;
+    }
+}
+
+/* 2 columns */
+@media (max-width: 1000px) and (min-width: 501px) {
+    .gallery {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: space-between;
+        width: 99%;
+    }
+
+
+    .gallery-image {
+        width: 50%;
+        position: relative;
+        cursor: pointer;
+        margin: 0 0 0 5px;
+    }
+
+    /* Re-order items */
+    .gallery-image:nth-child(2n+1) { order: 1; }
+    .gallery-image:nth-child(2n)   { order: 2; }
+
+    /* Force new columns */
+    .gallery::before,
+    .gallery::after {
+        content: "";
+        flex-basis: 100%;
+        width: 0;
+        order: 1;
+    }
+}
+
+/* 1 column */
+@media (max-width: 500px) {
+    .gallery-image {
+        position: relative;
+        cursor: pointer;
+        margin: 0 5px 5px 5px;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: left;
+    text-transform: capitalize;
+}
+
+.back-button {
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #0D1117;
+    border: none;
+    color: #F1FEFE;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 5px 5px 4px 1px rgba(0,0,0, 0.2);
+}
+  
+.back-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.back-button span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+  
+.back-button:hover span {
+    padding-left: 25px;
+}
+  
+.back-button:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+/* 3 columns */
+@media (min-width: 1000px) {
+    /* container needs a fixed height, and it 
+     * needs to be taller than your tallest column. */
+    /* y = mx + b
+     * [screen height] = m * [screen width] + b */
+     .s2022 {
+        height: calc((4.77866 * 100vw) + 100px);
+        /* (1430px, 7050px), (1200px, 5950px), (1001px, 5000px) */
+    }
+
+    .s2021 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2020 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2019 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2018 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2017 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2016 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2015 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2014 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2013 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2012 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2011 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2010 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2009 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2008 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2007 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+
+    .s2006 {
+        height: 10000px;
+        /* (1430px, ), (1200px, ), (1001px, ) */
+    }
+}
+
+/* 2 columns */
+@media (max-width: 1000px) and (min-width: 501px) {
+    /* container needs a fixed height, and it 
+     * needs to be taller than your tallest column. */
+    /* y = mx + b
+     * [screen height] = m * [screen width] + b */
+    .s2022 {
+        height: calc((10.8216 * 100vw) + 180px);
+        /* (100px, 11000px), (750px, 8300px), (501px, 5600px) */
+    }
+
+    .s2021 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2020 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2019 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2018 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2017 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2016 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2015 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2014 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2013 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2012 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2011 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2010 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2009 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2008 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2007 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+    .s2006 {
+        height: 10000px;
+        /* (100px, ), (750px, ), (501px, ) */
+    }
+
+
+}

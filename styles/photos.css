@@ -28,7 +28,7 @@ html, body {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    width: calc(25% - 10px);
+    width: calc((100% / 4) - 50px);
     height: auto;
     text-align: center;
 }
@@ -60,26 +60,14 @@ html, body {
     border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .btn {
-        transition: none;
-    }
-}
-
 @media (max-width: 1090px) {
     .btn {
-        width: calc(33% - 10px);
+        width: calc((100% / 3) - 25px);;
     }
  }
 
 @media (max-width: 800px) {
     .btn {
-        width: calc(50% - 10px);
-    }
-}
-
-@media (max-width: 496px) {
-    .btn {
-        width: calc(100% - 10px);
+        width: calc((100% / 2) - 10px);;
     }
 }
