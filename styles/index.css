@@ -90,7 +90,7 @@ h2 {
 }
 
 .bgImage {
-    background-image: url(../media/pg-img/seasons/2022S/gkcr/2022s-gkcr-03.webp);
+    background-image: url("../media/pg-img/seasons/2022S/gkcr/2022s-gkcr-03.webp");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
