@@ -35,6 +35,8 @@ html, body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: var(--offWhite);
+    text-decoration: none;
 }
 
 .gallery-image:hover .overlay {
@@ -171,6 +173,11 @@ html, body {
      * needs to be taller than your tallest column. */
     /* y = mx + b
      * [screen height] = m * [screen width] + b */
+    .sponsors{ 
+        height: calc((1.00153 * 100vw) + 38px);
+        /* (1430px, 7100), (1200px, 6000), (1001px, 5000) */
+    }
+
      .s2022 {
         height: calc((4.8922 * 100vw) + 112px);
         /* (1430px, 7100), (1200px, 6000), (1001px, 5000) */
@@ -262,6 +269,12 @@ html, body {
      * needs to be taller than your tallest column. */
     /* y = mx + b
      * [screen height] = m * [screen width] + b */
+
+    .sponsors {
+        height: calc((2.36462 * 100vw) + 49px);
+        /*  */
+    }
+    
     .s2022 {
         height: calc((11.2224 * 100vw) + 129px);
         /* (1000px, 11400), (750px, 8550), (501px, 7550) */

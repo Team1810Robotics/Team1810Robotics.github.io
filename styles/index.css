@@ -88,3 +88,20 @@ h2 {
     list-style: disc;
     margin-left: 0;
 }
+
+.bgImage {
+    background-image: url(../media/pg-img/seasons/2022S/cmr/2022s-cmr-03.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(8px);
+
+}
+
+.edge {
+    overflow: hidden;
+    height: 85%;
+}
