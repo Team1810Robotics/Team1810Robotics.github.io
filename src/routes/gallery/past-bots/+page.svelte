@@ -10,7 +10,7 @@
     const images = Array.from({ length: numberOfImages }, (_, i) => numberOfImages - i);
 </script>
 
-<BackButton href="/photo"/>
+<BackButton href="/photos"/>
 <Banner banner="Past Bots"/>
 
 <ul class="flex flex-wrap justify-center">

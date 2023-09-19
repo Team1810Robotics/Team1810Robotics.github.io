@@ -1,13 +1,13 @@
 <script lang="ts">
-    import type { PageData } from "./$types";
     import { numberOfPhotos } from "$lib";
     import BackButton from "$lib/BackButton.svelte";
     import Masonry from "$lib/Masonry.svelte";
     import Banner from "$lib/Banner.svelte";
+    import { page } from "$app/stores";
     import "$lib/heights.css";
 
-    export let data: PageData; 
-    const slug = data.slug;
+    const slug = $page.url.pathname.split("/")[3];
+
     const year = slug.slice(0, 4);
 
     var num = numberOfPhotos.get(slug);
